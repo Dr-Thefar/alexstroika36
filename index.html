@@ -537,6 +537,55 @@
       font-weight: 600;
     }
 
+    .telegram-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #37aee2 0%, #1f8fd5 100%);
+      box-shadow: 0 14px 30px rgba(31, 143, 213, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .telegram-float:hover {
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 18px 34px rgba(31, 143, 213, 0.42);
+    }
+
+    .telegram-float svg {
+      width: 30px;
+      height: 30px;
+      fill: #ffffff;
+    }
+
+    .telegram-float-text {
+      position: absolute;
+      right: 78px;
+      white-space: nowrap;
+      background: #ffffff;
+      color: #16324a;
+      padding: 10px 14px;
+      border-radius: 12px;
+      box-shadow: 0 10px 26px rgba(22, 50, 74, 0.12);
+      font-size: 14px;
+      font-weight: 700;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(8px);
+      transition: 0.2s ease;
+    }
+
+    .telegram-float:hover .telegram-float-text {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
     @media (max-width: 1100px) {
       .hero-grid {
         grid-template-columns: 1fr;
@@ -599,6 +648,24 @@
       }
     }
 
+    @media (max-width: 768px) {
+      .telegram-float {
+        width: 58px;
+        height: 58px;
+        right: 16px;
+        bottom: 16px;
+      }
+
+      .telegram-float svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .telegram-float-text {
+        display: none;
+      }
+    }
+
     @media (max-width: 560px) {
       .brand-title {
         font-size: 24px;
@@ -648,8 +715,8 @@
       </nav>
 
       <div class="header-actions">
-        <a class="phone" href="tel:+7 (980)-548-85-87">+7 (980)-548-85-87</a>
-        <a class="btn btn-primary" href="#request">Оставить заявку</a>
+        <a class="phone" href="tel:+79805488587">+7 (980) 548-85-87</a>
+        <a class="btn btn-primary" href="https://t.me/nonameee1878?text=Здравствуйте,%20хочу%20арендовать%20спецтехнику" target="_blank">Оставить заявку</a>
       </div>
     </div>
   </header>
@@ -665,8 +732,8 @@
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#request">Оставить заявку</a>
-          <a class="btn btn-secondary" href="tel:+7 (980)-548-85-87">Позвонить сейчас</a>
+          <a class="btn btn-primary" href="https://t.me/nonameee1878?text=Здравствуйте,%20хочу%20арендовать%20спецтехнику" target="_blank">Оставить заявку</a>
+          <a class="btn btn-secondary" href="tel:+79805488587">Позвонить сейчас</a>
         </div>
 
         <div class="hero-stats">
@@ -699,9 +766,9 @@
 
         <div class="side-box">
           <h3>Контакты</h3>
-          <p><strong>Телефон:</strong> <a href="tel:+7 (980)-548-85-87">+7 (980)-548-85-87</a></p>
+          <p><strong>Телефон:</strong> <a href="tel:+79805488587">+7 (980) 548-85-87</a></p>
           <p><strong>E-mail:</strong> <a href="mailto:alexstroiproekt@yandex.ru">alexstroiproekt@yandex.ru</a></p>
-          <a class="btn btn-primary" href="#request">Оставить заявку</a>
+          <a class="btn btn-primary" href="https://t.me/nonameee1878?text=Здравствуйте,%20хочу%20арендовать%20спецтехнику" target="_blank">Оставить заявку</a>
         </div>
       </div>
     </div>
@@ -739,8 +806,8 @@
           </div>
 
           <div class="equipment-actions">
-            <a class="btn btn-primary" href="#request">Оставить заявку</a>
-            <a class="btn btn-secondary" href="tel:+74732565274">Позвонить</a>
+            <a class="btn btn-primary" href="https://t.me/nonameee1878?text=Здравствуйте,%20интересует%20фронтальный%20погрузчик" target="_blank">Оставить заявку</a>
+            <a class="btn btn-secondary" href="tel:+79805488587">Позвонить</a>
           </div>
         </article>
 
@@ -766,9 +833,8 @@
           </div>
 
           <div class="equipment-actions">
-           <a class="btn btn-primary" href="https://t.me/nonameee1878" target="_blank">Оставить заявку
-           </a>
-            <a class="btn btn-secondary" href="tel:+74732565274">Позвонить</a>
+            <a class="btn btn-primary" href="https://t.me/nonameee1878?text=Здравствуйте,%20интересует%20экскаватор-погрузчик%20JCB" target="_blank">Оставить заявку</a>
+            <a class="btn btn-secondary" href="tel:+79805488587">Позвонить</a>
           </div>
         </article>
       </div>
@@ -853,14 +919,14 @@
         <div>
           <h2>Оставить заявку</h2>
           <p>
-            Позвоните нам прямо сейчас или напишите на почту. Мы уточним задачу,
+            Позвоните нам прямо сейчас или напишите в Telegram. Мы уточним задачу,
             подберём технику и быстро сориентируем по стоимости.
           </p>
         </div>
 
         <div style="display:flex; flex-direction:column; gap:12px; min-width:240px;">
-          <a class="btn" href="tel:+7 (980)-548-85-87">Позвонить:+7 (980)-548-85-87</a>
-          <a class="btn" href="mailto:alexstroiproekt@yandex.ru">alexstroiproekt@yandex.ru</a>
+          <a class="btn" href="tel:+79805488587">Позвонить: +7 (980) 548-85-87</a>
+          <a class="btn" href="https://t.me/nonameee1878?text=Здравствуйте,%20хочу%20оставить%20заявку%20на%20аренду%20спецтехники" target="_blank">Написать в Telegram</a>
         </div>
       </div>
     </div>
@@ -874,11 +940,21 @@
       </div>
 
       <div class="footer-contacts">
-        <a href="tel:+74732565274">+7 (980)-548-85-87</a>
+        <a href="tel:+79805488587">+7 (980) 548-85-87</a>
         <a href="mailto:alexstroiproekt@yandex.ru">alexstroiproekt@yandex.ru</a>
       </div>
     </div>
   </footer>
+
+  <a class="telegram-float"
+     href="https://t.me/nonameee1878?text=Здравствуйте,%20хочу%20арендовать%20спецтехнику"
+     target="_blank"
+     aria-label="Написать в Telegram">
+    <span class="telegram-float-text">Написать в Telegram</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M21.944 4.517a1.5 1.5 0 0 0-1.73-.24L2.97 12.06a1.5 1.5 0 0 0 .162 2.786l4.33 1.528 1.61 4.976a1.5 1.5 0 0 0 2.66.433l2.476-3.174 4.204 3.083a1.5 1.5 0 0 0 2.356-.908l3.17-14.401a1.5 1.5 0 0 0-.994-1.866ZM9.18 15.63l-.78 3.034-1.04-3.216 8.79-7.09-6.97 7.272Zm9.67 3.513-4.537-3.328a1.5 1.5 0 0 0-2.088.28l-1.033 1.325.946-3.68 7.996-8.343-1.284 13.746Z"/>
+    </svg>
+  </a>
 
 </body>
 </html>
